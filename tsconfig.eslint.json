@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Es importante deshabilitar la emisión de archivos para no sobreescribir nada
+    "noEmit": true
+  },
+  "include": [
+    // Incluye explícitamente las carpetas donde está tu código fuente.
+    // Ajusta las rutas según la estructura de tu proyecto.
+    "src/**/*.ts",
+    "test/**/*.ts",
+    // Incluye también el archivo de configuración de ESLint si es necesario
+    "eslint.config.mjs"
+  ]
+}
