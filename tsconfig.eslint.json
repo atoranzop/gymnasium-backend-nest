@@ -2,7 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     // Es importante deshabilitar la emisión de archivos para no sobreescribir nada
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "allowArbitraryExtensions": true,
   },
   "include": [
     // Incluye explícitamente las carpetas donde está tu código fuente.
